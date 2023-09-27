@@ -1,8 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Alegreya } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const alegreya = Alegreya({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +16,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={alegreya.className}>
+        <div className="flex items-center justify-evenly py-7 font-bold text-2xl fixed w-screen">
+          <div className="basis-1/2 flex-shrink">Frank Alvarez</div>
+          <div className="basis-1/3 flex-shrink-0">
+            <div className="flex justify-evenly text-base">
+              <button>About</button>
+              <button>My Skills</button>
+              <button>Experience</button>
+              <button>Contact Me</button>
+            </div>
+          </div>
+        </div>
+        {children}
+      </body>
     </html>
   )
 }

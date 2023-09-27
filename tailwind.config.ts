@@ -12,6 +12,12 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-blue': 'linear-gradient(180deg, #97AEFF 0%, #FFDBCA 100%)',
+        stack:
+          "url('/LowTier.svg'), url('/MiddleTier.svg'), url('/HighTier.svg')",
+      },
+      backgroundSize: {
+        fullW: '100% Auto',
       },
     },
   },
