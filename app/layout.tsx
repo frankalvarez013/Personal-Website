@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={alegreya.className}>
+    <html lang="en" className={alegreya.className}>
+      <body>
         <div className="flex items-center justify-evenly py-7 font-bold text-2xl fixed w-screen">
           <div className="basis-1/2 flex-shrink">Frank Alvarez</div>
           <div className="basis-1/3 flex-shrink-0">
@@ -33,7 +33,7 @@ export default function RootLayout({
         <footer className="h-5 w-full border-black border-4">
           <Image
             src={FooterTier}
-            className="relative -z-10 align-bottom -top-[290px]"
+            className="relative -z-10 align-bottom -top-[290px] min-w-[1200px]"
             alt=""
           />
         </footer>
