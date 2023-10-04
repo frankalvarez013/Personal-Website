@@ -1,7 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Alegreya } from 'next/font/google'
-
+import Image from 'next/image'
+import FooterTier from '../public/FooterTier.svg'
 const alegreya = Alegreya({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default function RootLayout({
         <div className="flex items-center justify-evenly py-7 font-bold text-2xl fixed w-screen">
           <div className="basis-1/2 flex-shrink">Frank Alvarez</div>
           <div className="basis-1/3 flex-shrink-0">
-            <div className="flex justify-evenly text-base">
+            <div className="flex justify-evenly text-base ">
               <button>About</button>
               <button>My Skills</button>
               <button>Experience</button>
@@ -29,6 +30,13 @@ export default function RootLayout({
           </div>
         </div>
         {children}
+        <footer className="h-5 w-full border-black border-4">
+          <Image
+            src={FooterTier}
+            className="relative -z-10 align-bottom -top-[290px]"
+            alt=""
+          />
+        </footer>
       </body>
     </html>
   )
