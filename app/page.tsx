@@ -9,13 +9,13 @@ import ProjectSection from '@/components/ProjectSection'
 export default function Home() {
   return (
     <div>
-      <main className="h-[500px] bg-gradient-blue">
+      <main className="h-[750px] md:h-[500px] bg-gradient-blue">
         <div className="h-full bg-bottom bg-stack bg-no-repeat bg-fullW">
           <div className="h-full flex">
-            <div className="h-full bg-bottom lg:bg-[bottom_right_40%] bg-[url('/sun.svg')] bg-no-repeat flex flex-grow justify-center items-end">
-              <div className="basis-1/4 flex justify-center items-end">
+            <div className="h-full bg-bottom md:bg-[bottom_right_40%] bg-[url('/sun.svg')] bg-no-repeat flex md:flex-row flex-col-reverse flex-grow justify-center md:items-end">
+              <div className="md:basis-1/4 flex justify-center md:items-end">
                 <div className="flex flex-col gap-10 items-start relative top-5">
-                  <div className="font-semibold text-6xl">
+                  <div className="font-semibold text-5xl md:text-6xl">
                     WEB <br />
                     DEVELOPER
                   </div>
@@ -29,18 +29,21 @@ export default function Home() {
                   </button>
                 </div>
               </div>
-              <div className="basis-1/4 justify-end items-end">
+              <div className="md:basis-1/4 flex justify-center md:justify-end md:items-end pt-20">
                 <Image
                   src={Face}
                   alt=""
-                  className="max-h-[480px] relative top-20"
+                  className="w-[300px] md:min-w-[480px] md:relative md:top-32"
                 ></Image>
               </div>
             </div>
           </div>
         </div>
       </main>
-      <ImageSection></ImageSection>
+      <div className="hidden md:block">
+        <ImageSection></ImageSection>
+      </div>
+
       <AboutMe></AboutMe>
       <ProjectSection></ProjectSection>
     </div>

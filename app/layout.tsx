@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Alegreya } from 'next/font/google'
 import Image from 'next/image'
 import FooterTier from '../public/FooterTier.svg'
+import Hamburger from '../public/hamburger.svg'
 const alegreya = Alegreya({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -18,9 +19,18 @@ export default function RootLayout({
   return (
     <html lang="en" className={alegreya.className}>
       <body>
-        <div className="flex items-center justify-evenly py-7 font-bold text-2xl fixed w-screen">
-          <div className="basis-1/2 flex-shrink">Frank Alvarez</div>
-          <div className="basis-1/3 flex-shrink-0">
+        <div className="flex items-center justify-start lg:justify-evenly py-2 font-bold text-2xl fixed w-screen bg-white z-10">
+          <div className="hidden md:block basis-1/2 flex-shrink">
+            Frank Alvarez
+          </div>
+          <div className="md:hidden">
+            <Image
+              alt=""
+              src={Hamburger}
+              className="m-3 ml-6 flex-shrink-0"
+            ></Image>
+          </div>
+          <div className="hidden md:block basis-1/3 flex-shrink-0">
             <div className="flex justify-evenly text-base ">
               <button>About</button>
               <button>My Skills</button>
@@ -30,10 +40,11 @@ export default function RootLayout({
           </div>
         </div>
         {children}
-        <footer className="h-5 w-full border-black border-4">
+        <div></div>
+        <footer className="h-5 w-full border-black border-y-4 overflow-y-visible overflow-x-clip">
           <Image
             src={FooterTier}
-            className="relative -z-10 align-bottom -top-[290px] min-w-[1200px]"
+            className="relative align-bottom -top-[500px] min-w-[1200px] max-w-full w-full"
             alt=""
           />
         </footer>
