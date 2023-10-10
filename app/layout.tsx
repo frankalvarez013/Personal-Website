@@ -23,13 +23,12 @@ export default function RootLayout({
           <div className="hidden md:block basis-1/2 flex-shrink">
             Frank Alvarez
           </div>
-          <div className="md:hidden">
-            <Image
-              alt=""
-              src={Hamburger}
-              className="m-3 ml-6 flex-shrink-0"
-            ></Image>
+          <div className="md:hidden m-3 ml-6 flex-shrink-0 flex-grow">
+            <Image alt="" src={Hamburger} className=""></Image>
           </div>
+          <button className="md:hidden px-4 py-1 rounded-md bg-gray-800 text-white text-base mr-8">
+            Download Resume
+          </button>
           <div className="hidden md:block basis-1/3 flex-shrink-0">
             <div className="flex justify-evenly text-base ">
               <button>About</button>

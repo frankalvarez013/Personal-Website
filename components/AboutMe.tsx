@@ -25,7 +25,7 @@ const AboutMe = () => {
           </div>
           <div className="w-1/2 flex justify-center">
             <div className="w-1/2">
-              <h1 className="font-bold text-xl">Skills & Experience</h1>
+              <h1 className="font-bold text-xl">Skills</h1>
               <p>
                 Some email services cost hundreds or thousands to send to a
                 not-so-large audience. We’ll make sure you can stop worrying
