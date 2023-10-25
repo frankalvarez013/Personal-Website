@@ -24,9 +24,13 @@ export default function Home() {
                     Works with Sketch, Figma and XD. Easily import your content
                     and send with your favorite API.
                   </div>
-                  <button className="hidden md:block px-6 py-2 rounded-md bg-gray-800 text-white">
+                  <a
+                    className="hidden md:block px-6 py-2 rounded-md bg-gray-800 text-white"
+                    href="Frank_Alvarez_Resume_2023.pdf"
+                    download
+                  >
                     Download Resume
-                  </button>
+                  </a>
                 </div>
               </div>
               <div className="md:basis-1/4 flex justify-center md:justify-end md:items-end pt-20">

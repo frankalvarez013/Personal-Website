@@ -47,9 +47,13 @@ const Header = () => {
         </div>
       </div>
 
-      <button className="md:hidden px-4 py-1 rounded-md bg-gray-800 text-white text-base mr-8">
+      <a
+        className="md:hidden px-4 py-1 rounded-md bg-gray-800 text-white text-base mr-8"
+        href="Frank_Alvarez_Resume_2023.pdf"
+        download
+      >
         Download Resume
-      </button>
+      </a>
       <div
         className={`fixed flex -top-full gap-0 flex-col bg-white w-full text-center md:block md:basis-1/3 flex-shrink-0 md:static md:flex-row md:w-auto md:top-auto lg:items-center lg:space-x-4 lg:pr-10 lg:gap-x-2 text-sm ${
           hamburgerMenuOpen ? 'top-0 h-screen justify-evenly items-center' : ''
