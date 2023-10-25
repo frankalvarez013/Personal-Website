@@ -64,7 +64,7 @@ const AboutMe = () => {
               <p>
                 I am currently trying to improve my ability to create better UI
                 designs by using wireframes. I am also trying to integrate what
-                I've learned from school from SQL and Object-Oriented-Programs
+                I have learned from school from SQL and Object-Oriented-Programs
                 into the products I am creating in the Web. All the languages
                 and softwares are things I have a proficient level of.
               </p>
