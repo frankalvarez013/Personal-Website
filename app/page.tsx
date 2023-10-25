@@ -20,9 +20,10 @@ export default function Home() {
                     DEVELOPER
                   </div>
                   <div className="w-60">
-                    Dynamic email tool for creators that doesn’t cost a leg.
-                    Works with Sketch, Figma and XD. Easily import your content
-                    and send with your favorite API.
+                    As a recent college graduate with a focus on creating
+                    exceptional products, I'm a front-end developer specializing
+                    in JavaScript. I'm eager to collaborate and work with others
+                    to achieve great results.
                   </div>
                   <a
                     className="hidden md:block px-6 py-2 rounded-md bg-gray-800 text-white"
