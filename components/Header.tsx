@@ -1,16 +1,18 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
-
+import { useEffect } from 'react'
 const Header = () => {
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false)
   const [scrollBar, setScrollBar] = useState(false)
+  useEffect(() => {
+    if (scrollBar) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'auto'
+    }
+  })
 
-  if (scrollBar) {
-    document.body.style.overflow = 'hidden'
-  } else {
-    document.body.style.overflow = 'auto'
-  }
   const handleBurgerClick = () => {
     setHamburgerMenuOpen(!hamburgerMenuOpen)
     setScrollBar(!scrollBar)
