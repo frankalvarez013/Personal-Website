@@ -23,7 +23,9 @@ const Header = () => {
   }
   return (
     <div className="flex items-center justify-start lg:justify-evenly py-2 font-bold text-2xl fixed w-screen bg-white z-10">
-      <div className="hidden md:block basis-1/2 flex-shrink">Frank Alvarez</div>
+      <div className="hidden md:block basis-1/2 flex-shrink ml-5">
+        Frank Alvarez
+      </div>
       <div className=" ml-6 z-10 flex-grow flex">
         <div
           onClick={handleBurgerClick}
