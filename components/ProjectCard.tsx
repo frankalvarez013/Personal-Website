@@ -1,19 +1,21 @@
+import Image from 'next/image'
+import Asset_1 from '../public/Asset 1.svg'
 const ProjectCard = (props) => {
   return (
-    <div className="flex p-5 rounded-xl pb justify-start items-start  flex-wrap">
-      <div className="font-bold mb-3 mr-10">
-        {`${props.startTime} - ${props.endTime}`}
+    <a
+      href={props.link}
+      target="_blank"
+      className="flex p-5 rounded-3xl pb justify-start items-start flex-wrap  lg:hover:bg-rose-100"
+    >
+      <div className="font-bold mb-3 mr-10 w-48 whitespace-normal">
+        {`${props.startTime} - ${props.endTime}`}{' '}
       </div>
       <div className=" max-w-sm">
-        <div className="font-semibold text-lg ">
+        <div className="font-semibold text-lg inline-flex gap-3">
           {`${props.title} · ${props.business}`}
+          <Image alt="" src={Asset_1} height={15}></Image>
         </div>
-        <p className="mb-3 text-sm leading-normal">
-          Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui
-          esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
-          Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate
-          aute id deserunt nisi.
-        </p>
+        <p className="mb-3 text-sm leading-normal">{props.Description}</p>
         <div className="flex gap-2 flex-wrap">
           {props.Tech.map((value, index) => {
             return (
@@ -27,7 +29,7 @@ const ProjectCard = (props) => {
           })}
         </div>
       </div>
-    </div>
+    </a>
   )
 }
 export default ProjectCard

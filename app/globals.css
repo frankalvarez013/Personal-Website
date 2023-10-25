@@ -8,3 +8,11 @@
   margin: 0;
   padding: 0;
 }
+
+.checkIt {
+  background-image: linear-gradient(
+    180deg,
+    transparent 50%,
+    rgb(255, 219, 200) 50%
+  );
+}

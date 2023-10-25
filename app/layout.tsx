@@ -4,6 +4,7 @@ import { Alegreya } from 'next/font/google'
 import Image from 'next/image'
 import FooterTier from '../public/FooterTier.svg'
 import Hamburger from '../public/hamburger.svg'
+import Contact from '../components/Contact'
 const alegreya = Alegreya({ subsets: ['latin'] })
 import Header from '@/components/Header'
 export const metadata: Metadata = {
@@ -19,32 +20,16 @@ export default function RootLayout({
   return (
     <html lang="en" className={alegreya.className}>
       <body>
-        {/* <div className="flex items-center justify-start lg:justify-evenly py-2 font-bold text-2xl fixed w-screen bg-white z-10">
-          <div className="hidden md:block basis-1/2 flex-shrink">
-            Frank Alvarez
-          </div>
-          <div className="md:hidden m-3 ml-6 flex-shrink-0 flex-grow">
-            <Image alt="" src={Hamburger} className=""></Image>
-          </div>
-          <button className="md:hidden px-4 py-1 rounded-md bg-gray-800 text-white text-base mr-8">
-            Download Resume
-          </button>
-          <div className="hidden md:block basis-1/3 flex-shrink-0">
-            <div className="flex justify-evenly text-base ">
-              <button>About</button>
-              <button>My Skills</button>
-              <button>Experience</button>
-              <button>Contact Me</button>
-            </div>
-          </div>
-        </div> */}
         <Header></Header>
         {children}
-        <div></div>
-        <footer className="h-5 w-full border-black border-y-4 overflow-y-visible overflow-x-clip">
+        <footer className=" mt-36 h-5 w-full  overflow-y-visible overflow-x-clip">
+          <div className="relative z-10 checkIt">
+            <Contact></Contact>
+          </div>
+
           <Image
             src={FooterTier}
-            className="relative align-bottom -top-[500px] min-w-[1200px] max-w-full w-full"
+            className="relative align-bottom -top-[650px] min-w-[1200px] max-w-full w-full"
             alt=""
           />
         </footer>
