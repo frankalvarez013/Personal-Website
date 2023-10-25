@@ -6,7 +6,6 @@ const ContactUs = () => {
   const [submitt, onSubmitt] = useState(false)
 
   const [formResult, isFormResult] = useState(false)
-
   async function handleSubmit(event) {
     event.preventDefault()
     const nameVal = (document.getElementById('name') as HTMLInputElement)?.value
@@ -21,7 +20,8 @@ const ContactUs = () => {
       isFormResult(false)
       event.preventDefault()
       const formData = new FormData(event.target)
-      formData.append('access_key', '7b3d8ab8-c5f2-448e-8693-aace83eb4f7f')
+
+      formData.append('access_key', process.env.NEXT_PUBLIC_EMAIL_KEY)
 
       const object = Object.fromEntries(formData)
       const json = JSON.stringify(object)
