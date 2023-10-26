@@ -57,8 +57,8 @@ const ProjectSection = () => {
       id="experience"
     >
       <div className="flex w-11/12 h-5/6 flex-col md:flex-row justify-start lg:justify-center gap-10">
-        <div className="text-center">
-          <h1 className="font-bold text-2xl whitespace-nowrap md:mr-20 mb-5  m-auto">
+        <div className="text-center md:mr-16">
+          <h1 className="font-bold text-2xl whitespace-nowrap  mb-5 mx-auto">
             Projects & Experience!
           </h1>
           <div className="w-1/2 font-light m-auto">

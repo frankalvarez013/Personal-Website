@@ -13,7 +13,7 @@ export default function Home() {
         <div className="h-full bg-bottom bg-stack bg-no-repeat bg-fullW">
           <div className="h-full flex">
             <div className="h-full bg-bottom md:bg-[bottom_right_40%] bg-[url('/sun.svg')] bg-no-repeat flex md:flex-row flex-col-reverse flex-grow justify-center md:items-end">
-              <div className="md:basis-1/4 flex justify-center md:items-end">
+              <div className="md:basis-1/4 flex justify-center md:items-end pl-10">
                 <div className="flex flex-col gap-10 items-start relative top-5">
                   <div className="font-semibold text-5xl md:text-6xl">
                     WEB <br />

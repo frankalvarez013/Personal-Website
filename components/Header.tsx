@@ -22,7 +22,7 @@ const Header = () => {
     setScrollBar(false)
   }
   return (
-    <div className="flex items-center justify-start lg:justify-evenly py-2 font-bold text-2xl fixed w-screen bg-white z-10">
+    <div className="flex items-center justify-start lg:justify-evenly py-2 font-bold text-2xl fixed w-screen bg-white z-50">
       <div className="hidden md:block basis-1/2 flex-shrink ml-5">
         Frank Alvarez
       </div>
