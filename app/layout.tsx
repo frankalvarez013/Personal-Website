@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${alegreya.className} !overflow-x-hidden`}>
+    <html lang="en" className={`${alegreya.className} `}>
       <body className="!overflow-x-hidden">
         <Header></Header>
         {children}

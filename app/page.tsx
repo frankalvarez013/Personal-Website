@@ -38,7 +38,7 @@ export default function Home() {
                 <Image
                   src={Face}
                   alt=""
-                  className="w-[300px] md:min-w-[480px] md:relative md:top-32"
+                  className="w-[300px] md:min-w-[390px] md:relative md:top-32 lg:min-w-[480px]"
                 ></Image>
               </div>
             </div>

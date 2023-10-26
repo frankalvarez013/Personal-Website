@@ -20,7 +20,6 @@ const imageSection = () => {
         <Image alt="" src={PurpleCase}></Image>
         <Image alt="" src={bbyCase}></Image>
         <Image alt="" src={YellowCase}></Image>
-        <Image alt="" src={PinkCase}></Image>
       </div>
     </div>
   )
