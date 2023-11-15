@@ -58,11 +58,17 @@ const AboutMe = () => {
             <div className="lg:w-2/3">
               <h1 className="font-bold text-sm md:text-xl">Skills</h1>
               <p>
-                I am currently trying to improve my ability to create better UI
-                designs by using wireframes. I am also trying to integrate what
-                I have learned from school from SQL and Object-Oriented-Programs
-                into the products I am creating in the Web. All the languages
-                and softwares are things I have a proficient level of.
+                I am Frank Santiago Alvarez, a dedicated front-end developer
+                aiming to expand my expertise into full-stack development. My
+                current focus is on mastering JavaScript and React, delving deep
+                into their intricacies to enhance my technical proficiency.
+                Since high school, my passion for computer science has been a
+                driving force in my life. My academic journey at California
+                State University Long Beach has not only honed my development
+                skills but also instilled a strong discipline in my work. I am
+                eager to collaborate with like-minded professionals on
+                innovative projects, contributing to and learning from the
+                development of outstanding products.
               </p>
             </div>
           </div>

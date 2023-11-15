@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className="!overflow-x-hidden">
         <Header></Header>
         {children}
-        <footer className=" mt-36 h-5 w-full  overflow-y-visible overflow-x-clip">
+        <footer className=" mt-36 h-5 w-full overflow-y-visible overflow-x-clip">
           <div className="relative z-10 checkIt">
             <Contact></Contact>
           </div>
