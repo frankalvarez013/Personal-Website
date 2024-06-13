@@ -110,7 +110,7 @@ const Header = () => {
                 ?.scrollIntoView({ behavior: 'smooth' })
             }}
             scroll={false}
-            className="nav-link hover:underline decoration-2"
+            className="nav-link hover:underline decoration-2 "
           >
             Contact Me
           </Link>

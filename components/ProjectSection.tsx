@@ -2,6 +2,42 @@ import ProjectCard from './ProjectCard'
 const ProjectSection = () => {
   const projects = [
     {
+      startTime: 'Jan 2024',
+      endTime: 'Apr 2024',
+      title: 'Full Stack Developer',
+      business: 'Territory Assistant',
+      Tech: [
+        'Next.js',
+        'React.js',
+        'CSS',
+        'Tailwind',
+        'PRISMA ORM',
+        'SQL',
+        'Typescript',
+      ],
+      Description:
+        'Developed a responsive full-stack application with Next.js and Tailwind CSS, improving admin efficiency in managing and distributing information by 30%. Constructed and implemented a RESTful API with Prisma (SQL), enhancing real-time data access and increasing user engagement by 25%. Coordinated project tasks using JIRA and ensured efficient source control with Git, leading to a 20% improvement in milestone tracking and productivity. Designed and Optimized Territory React Components, ensuring the large scale system can operate in high performances. ',
+      link: 'https://github.com/frankalvarez013/territory_assistant',
+    },
+    {
+      startTime: 'August 2023',
+      endTime: 'October 2023',
+      title: 'Web Developer',
+      business: 'AO Construction',
+      Tech: [
+        'Nextjs',
+        'React.js',
+        'HTML',
+        'Tailwind',
+        'JavaScript',
+        'CSS',
+        'Figma',
+      ],
+      Description:
+        'Tasked to create a dynamic and responsive website for a local construction company, I created a wireframe from Figma for the design schema of the website. Using Tailwind and Nextjs tools, I was able to implement the design of the website with animations. The website consists of a main page with the general information of the company, a projects section which uses the Google API to show all the construction sites that have been worked on to show the progress of each job site, and an about page of the team',
+      link: 'https://ao-construction-m4e4yoex6-frankalvarez013s-projects.vercel.app/',
+    },
+    {
       startTime: 'August 2023',
       endTime: 'October 2023',
       title: 'Web Developer',
@@ -39,16 +75,6 @@ const ProjectSection = () => {
         'Designed a web application using WordPress to create a searchable forum which shares experiences and reviews on board member to help union members make critical work choices.',
 
       link: 'https://local17ratemysupervisor.org/',
-    },
-    {
-      startTime: 'May 2023',
-      endTime: 'July 2023',
-      title: 'Web Developer',
-      business: 'Adopt Me! - Website',
-      Tech: ['React', 'CSS'],
-      Description:
-        'Personal Project used to understand the React framework. I implemented React Hooks, Effects, Custom Hooks, React Router, Query, Unctrolled Forms and Class Components.',
-      link: 'https://frankalvarez013.github.io/Adopt-Pet/',
     },
   ]
   return (

@@ -26,7 +26,7 @@ export default function Home() {
                     to achieve great results.
                   </div>
                   <a
-                    className="hidden md:block px-6 py-2 rounded-md bg-gray-800 text-white"
+                    className="hidden md:block px-6 py-2 rounded-md bg-gray-800 text-white hover:bg-rose-200 hover:text-black"
                     href="Frank_Alvarez_Resume_2023.pdf"
                     download
                   >
