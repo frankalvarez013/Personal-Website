@@ -21,7 +21,7 @@ const AboutMe = () => {
             <div className=" w-3/4">
               <h4 className="font-bold text-xl mb-4">About Me</h4>
               <p className="font-thin whitespace-pre-line text-sm md:text-base">
-                I am Frank Santiago Alvarez, a dedicated front-end developer
+                I am Frank Santiago Alvarez, a dedicated software developer
                 aiming to expand my expertise into full-stack development. My
                 current focus is on mastering JavaScript and React, delving deep
                 into their intricacies to enhance my technical proficiency.
