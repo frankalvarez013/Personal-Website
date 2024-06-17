@@ -34,14 +34,14 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-              <div className="md:basis-1/4 flex justify-center md:justify-end md:items-end pt-20 w-[300px] md:min-w-[390px] md:relative md:top-32 lg:min-w-[480px]">
+              <div className="md:basis-1/4 flex justify-center md:justify-end md:items-end pt-20  md:relative md:top-32 ">
                 <svg
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   viewBox="150.34 60.09 500.71 547.04"
-                  className=" bg-transparent"
+                  className=" bg-transparent w-[300px] md:min-w-[390px] lg:min-w-[480px]"
                 >
                   <path
                     className="bg"
