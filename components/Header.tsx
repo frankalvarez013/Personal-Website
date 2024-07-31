@@ -23,10 +23,13 @@ const Header = () => {
   }
   return (
     <div className="flex items-center justify-start lg:justify-evenly py-2 font-bold text-2xl fixed w-screen bg-white z-50">
-      <div className="hidden md:block basis-1/2 flex-shrink ml-5">
+      <Link
+        href={'/'}
+        className="hidden md:block basis-1/2 flex-shrink ml-5 hover:text-amber-500"
+      >
         Frank Alvarez
-      </div>
-      <div className=" ml-6 z-10 flex-grow flex">
+      </Link>
+      <div className="ml-6 z-10 flex-grow flex">
         <div
           onClick={handleBurgerClick}
           className="md:hidden cursor-pointer flex gap-1 flex-col"

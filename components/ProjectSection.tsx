@@ -2,6 +2,18 @@ import ProjectCard from './ProjectCard'
 const ProjectSection = () => {
   const projects = [
     {
+      startTime: 'June 2024',
+      endTime: 'July 2024',
+      title: 'Full Stack Developer',
+      business: 'Project: Twitch Copy',
+      Tech: ['Nextjs', 'React.js', 'Supabase', 'Tailwind', 'JavaScript', 'CSS'],
+      Description:
+        'Project: Created full stack application to mimick the platform TWITCH in a rudimentary fashion. Guests and Users can login, view/follow streamers, and get live notifications from chat and when a streamer is live.',
+      Scenario:
+        'Guests:Can see a list of channels (profiles)Can go on channel page and follow the channelIf user click on follow and is not connected will ask loginConnected users (eddy)Eddy connect with his google accountEddy need to complete his profile by setting his username and notification preferencesOnce connected and profile completededdy goes to his channel and start streaming (no need to do encoding stuff - just put a button that trigger a boolean and integrate an iframe of this video https://www.youtube.com/watch?v=jfKfPfyJRdk when the boolean is true for frontend)Connected users (Nico)Nico follow eddyIf eddy start a streaming, Nico receive a push notification or an email if he’s not connected to the website.Nico can go on Eddy’s stream and start chatting (basic)',
+      link: 'https://frankalvarez-stonks-fullstack-asg.vercel.app/en',
+    },
+    {
       startTime: 'Jan 2024',
       endTime: 'Apr 2024',
       title: 'Full Stack Developer',
@@ -19,24 +31,7 @@ const ProjectSection = () => {
         'Developed a responsive full-stack application with Next.js and Tailwind CSS, improving admin efficiency in managing and distributing information by 30%. Constructed and implemented a RESTful API with Prisma (SQL), enhancing real-time data access and increasing user engagement by 25%. Coordinated project tasks using JIRA and ensured efficient source control with Git, leading to a 20% improvement in milestone tracking and productivity. Designed and Optimized Territory React Components, ensuring the large scale system can operate in high performances. ',
       link: 'https://github.com/frankalvarez013/territory_assistant',
     },
-    {
-      startTime: 'August 2023',
-      endTime: 'October 2023',
-      title: 'Web Developer',
-      business: 'AO Construction',
-      Tech: [
-        'Nextjs',
-        'React.js',
-        'HTML',
-        'Tailwind',
-        'JavaScript',
-        'CSS',
-        'Figma',
-      ],
-      Description:
-        'Tasked to create a dynamic and responsive website for a local construction company, I created a wireframe from Figma for the design schema of the website. Using Tailwind and Nextjs tools, I was able to implement the design of the website with animations. The website consists of a main page with the general information of the company, a projects section which uses the Google API to show all the construction sites that have been worked on to show the progress of each job site, and an about page of the team',
-      link: 'https://ao-construction-m4e4yoex6-frankalvarez013s-projects.vercel.app/',
-    },
+
     {
       startTime: 'August 2023',
       endTime: 'October 2023',

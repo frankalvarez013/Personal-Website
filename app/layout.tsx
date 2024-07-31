@@ -8,6 +8,7 @@ import Contact from '../components/Contact'
 const alegreya = Alegreya({ subsets: ['latin'] })
 import Header from '@/components/Header'
 import Head from 'next/head'
+import { usePathname } from 'next/navigation'
 export const metadata: Metadata = {
   title: 'Frank Alvarez',
   description: 'Personal Website to showcase professional skills',
@@ -27,17 +28,6 @@ export default function RootLayout({
       <body className="!overflow-x-hidden">
         <Header></Header>
         {children}
-        <footer className=" mt-36 h-5 w-full overflow-y-visible overflow-x-clip">
-          <div className="relative z-10 checkIt">
-            <Contact></Contact>
-          </div>
-
-          <Image
-            src={FooterTier}
-            className="relative align-bottom -top-[650px] min-w-[1200px] max-w-full w-full"
-            alt=""
-          />
-        </footer>
       </body>
     </html>
   )

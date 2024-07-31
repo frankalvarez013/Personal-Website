@@ -5,6 +5,8 @@ import ImageSection from '@/components/imageSection'
 import AboutMe from '@/components/AboutMe'
 import ProjectSection from '@/components/ProjectSection'
 import Script from 'next/script'
+import ContactUs from '@/components/Contact'
+import FooterTier from '../public/FooterTier.svg'
 
 export default function Home() {
   return (
@@ -16,14 +18,12 @@ export default function Home() {
               <div className="md:basis-1/4 flex justify-center md:items-end pl-10">
                 <div className="flex flex-col gap-10 items-start relative top-5">
                   <div className="font-semibold text-5xl md:text-6xl">
-                    WEB <br />
-                    DEVELOPER
+                    Software <br /> Engineer
                   </div>
                   <div className="w-60">
-                    As a recent college graduate with a focus on creating
-                    exceptional products, I'm a front-end developer specializing
-                    in JavaScript. I'm eager to collaborate and work with others
-                    to achieve great results.
+                    I am a Full Stack Developer specializing in JavaScript. I'm
+                    eager to collaborate and work with others to achieve great
+                    results.
                   </div>
                   <a
                     className="hidden md:block px-6 py-2 rounded-md bg-gray-800 text-white hover:bg-rose-200 hover:text-black"
@@ -367,6 +367,17 @@ export default function Home() {
 
       <AboutMe></AboutMe>
       <ProjectSection></ProjectSection>
+      <footer className=" mt-36 h-5 w-full overflow-y-visible overflow-x-clip">
+        <div className="relative z-10 checkIt">
+          <ContactUs></ContactUs>
+        </div>
+
+        <Image
+          src={FooterTier}
+          className="relative align-bottom -top-[650px] min-w-[1200px] max-w-full w-full"
+          alt=""
+        />
+      </footer>
       {/* Adding an inline script */}
       <Script
         src="/animationFace.js"
